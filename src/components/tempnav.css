@@ -1,0 +1,120 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 84px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    box-shadow: 0px 1px white;
+}
+
+nav>.logo {
+    cursor: pointer;
+    margin-left: 5%;
+    /* scale: 1.7; */
+    margin-top: 2%;
+}
+
+nav>.desktop-menu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-right: 5%;
+}
+
+nav>.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    list-style-type: none;
+    text-align: center;
+    padding: 1rem 2rem;
+    top: 85px;
+    z-index: 5;
+    background-color: white;
+    transition-duration: 2s;
+
+}
+
+nav>.mobile-menu>li {
+    width: 100vw;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    color: var(--darkgray);
+}
+
+nav>.mobile-menu>li>button {
+    text-transform: none;
+    font-size: 1.1rem;
+}
+
+nav>.desktop-menu>li {
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--darkgray);
+    font-size: 1.2rem;
+    /* margin-right: 1.5rem; */
+    cursor: pointer;
+}
+
+nav>.desktop-menu>li>button {
+    text-transform: none;
+    font-size: 1.1rem;
+}
+
+#basic-button {
+    color: var(--darkgray);
+    font-size: 20px;
+}
+#basic-button-mobile{
+    color: var(--darkgray) !important;
+
+}
+
+#navbtn {
+    /* background-color: #89CFF0; */
+    background-color: var(--lightblue);
+}
+
+nav>ul>li>a:hover {
+    opacity: 0.75;
+}
+
+.mobile-menu-button {
+    display: none;
+    margin-right: 2rem;
+    /* color: #89CFF0; */
+    color: var(--lightblue);
+    width: 2rem;
+    height: 1.5rem;
+}
+
+#basic-button-mobile {
+    color: black;
+}
+
+#navbtn-mobile {
+    background-color: var(--lightblue);
+}
+
+@media screen and (max-width: 800px) {
+    /* nav>.logo {
+        scale: 1.2;
+    } */
+    .desktop-menu {
+        display: none !important;
+    }
+
+    .mobile-menu {
+        display: flex !important;
+
+    }
+
+    .mobile-menu-button {
+        display: block !important;
+    }
+}

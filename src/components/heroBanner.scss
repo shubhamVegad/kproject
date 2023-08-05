@@ -1,0 +1,124 @@
+@import "../mixins.scss";
+
+.herobanner {
+    height: 727px;
+    width: 100%;
+    background: var(--gradient);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    @include md {
+        height: 600px;
+        flex-direction: column;
+
+
+    }
+
+}
+
+.left {
+    height: 100%;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+
+    @include md {
+        height: 50%;
+        width: 90%;
+    }
+    @include sm {
+        width: 100%;
+    }
+}
+
+.container {
+    font-family: 'Raleway', sans-serif;
+    height: 60%;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 10%;
+    @include md{
+        padding: 5%;
+        margin-top: 0;
+        height: 90%;
+        width: 100%;
+    }
+    @include md{
+        padding: 2%;
+        margin-left: 0;
+        height: 90%;
+        width: 100%;
+    }
+
+}
+
+.fl {
+
+    text-align: left;
+    color: var(--darkgray);
+    font-size: 50px;
+    margin: 2%;
+    font-weight: 600 !important;
+    @include md{
+        font-size: 2rem;
+        margin: 0;
+        
+    }
+    @include sm{
+        margin: 2%;
+    }
+
+}
+
+.sl {
+    color: var(--darkblue);
+    font-size: 67px;
+    margin: 2%;
+    font-weight: 700 !important;
+    @include md{
+        font-size: 3rem;
+        
+    }
+}
+
+.tl {
+    color: var(--darkgray);
+    font-size: 33px;
+    margin: 2%;
+}
+
+.herobtn {
+
+    background-color: var(--darkblue) !important;
+    margin: 2% !important;
+    border-radius: 5rem !important;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 45%;
+
+    @include md {
+        height: 50%;
+        width: 90%;
+    }
+    @include sm {
+        width: 100%;
+    }
+}
+
+.heroimg {
+    height: 75%;
+    width: 80%;
+    @include md{
+        height: 90%;
+    }
+}

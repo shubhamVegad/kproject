@@ -1,0 +1,424 @@
+@import '../mixins.scss';
+
+.galary {
+    margin-top: 10px;
+    height: 200px;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include md {
+        width: 100%;
+        height: 180px;
+    }
+}
+
+.sec {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include md {
+        width: 30%;
+        height: 90%;
+    }
+}
+
+.gp {
+    scale: 1.0;
+
+    @include md {
+        scale: 0.8;
+    }
+
+}
+
+.r2 {
+    font-size: 35px;
+    color: var(--lightblue);
+    font-family: Raleway;
+}
+
+.r3 {
+    font-size: 20px;
+    color: var(--darkgray);
+    font-weight: 800;
+    text-align: center;
+    @include md{
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+
+.about {
+    margin-top: 10px;
+    height: 430px;
+    width: 90%;
+    padding-inline: 5%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--lightbg);
+
+    @include md {
+        padding-inline: 0;
+        width: 95%;
+        flex-direction: column;
+    }
+    @include sm{
+        height: 440px;
+    }
+
+}
+
+.aleft {
+    height: 100%;
+    width: 40%;
+
+    @include md {
+        height: 40%;
+        width: 100%;
+        text-align: center;
+    }
+    @include sm {
+        height: 35%;
+    }
+
+}
+
+.aleftimg {
+    height: 100%;
+    width: 100%;
+
+    @include md {
+        width: 50%;
+    }
+}
+
+.aright {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 5%;
+
+    @include md {
+        height: 60%;
+        width: 100%;
+    }
+    @include sm {
+        align-items: center;
+        padding: 2%;
+        height: 65%;
+    }
+
+
+}
+
+.ahead {
+    color: var(--darkgray);
+    font-size: 30px;
+    font-weight: 700;
+
+    @include md {
+        margin: 5px;
+        margin-inline: auto;
+        font-size: 1.7rem;
+    }
+
+}
+
+.acon {
+    color: var(--darkgray);
+    font-size: 15px;
+    font-weight: 100 !important;
+    font-family: Raleway;
+    line-height: 20px;
+
+
+}
+
+.work {
+    height: 350px;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include md {
+        height: 255px;
+        width: 95%;
+    }
+
+}
+
+.whead {
+    font-family: Raleway;
+    font-size: 35px;
+    font-weight: 700;
+    @include md {
+        font-size: 1.8rem;
+    }
+}
+
+.wcon {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include md {
+        width: 100%;
+        height: 60%;
+    }
+
+    @include sm {
+        height: 66%;
+    }
+
+}
+
+.wsec {
+    height: 90%;
+    width: 18%;
+
+    @include md {
+        height: 88%;
+        width: 24%;
+    }
+
+    @include sm {
+        height: 76%;
+    }
+}
+
+
+
+.wsecimg {
+    height: 100%;
+    width: 100%;
+}
+
+
+.offer {
+    margin-top: 10px;
+    height: 900px;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include md {
+        width: 95%;
+    }
+
+}
+
+.otop {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-repeat: no-repeat;
+    background-size: 49% 79%;
+    background-position: 0px;
+    
+    @include md {
+        flex-direction: column;
+        background-size: 100% 100%;
+
+    }
+}
+
+.obottom {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-repeat: no-repeat;
+    background-size: 49% 79%;
+    background-position: bottom right;
+    
+    @include md {
+        background-size: 100% 100%;
+        flex-direction: column-reverse;
+    }
+}
+
+.ocon {
+    // padding: 5%;
+    height: 67%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background: url();
+
+    @include md {
+        height: 55%;
+        width: 90%;
+    }
+}
+.oconaie{
+    align-items: flex-start;
+    @include md{
+        align-items: flex-end;
+
+    }
+}
+
+.offerimg {
+    height: 80%;
+    width: 35%;
+    
+    @include md {
+        height: 45%;
+        width: 60%;
+    }
+}
+.aconall{
+    text-align: left;
+}
+
+
+
+
+.serve {
+    height: 700px;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f1f1f1;
+    @include md {
+        width: 95%;
+        height: 630px;
+    }
+    @include sm {
+        width: 95%;
+        height: 740px;
+    }
+}
+
+.scon {
+    height: 80%;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    @include md {
+        width: 100%;
+        height: 88%;
+    }
+}
+
+.sconsec {
+    // height: 40%;
+    height: 240px;
+    // width: 20%;
+    width: 240px;
+    margin: auto;
+    // margin: 2%;
+    border: 1px solid var(--lightblue);
+    border-radius: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4FDFD;
+    box-sizing: border-box;
+    
+    @include md{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.ssecimgbox {
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: var(--lightblue);
+    margin-bottom: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.global-class-name {
+    color: white;
+    height: 70%;
+    width: 70%;
+}
+
+
+
+.wwork {
+    height: 300px;
+    width: 90%;
+    margin-top: 10px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    @include md{
+        height: 220px;
+        width: 95%;
+    }
+}
+
+.workcon {
+    height: 60%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    @include md{
+        height: 70%;
+        width: 95%;
+    }
+}
+
+.worksec {
+    height: 80%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    @include md{
+        width: 20%;
+    }
+}

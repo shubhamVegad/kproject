@@ -1,0 +1,35 @@
+.page-not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  
+    .content {
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 8rem;
+      color: #ff5959;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 2rem;
+      color: #444;
+      margin-bottom: 10px;
+    }
+  
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 5rem;
+      }
+  
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  

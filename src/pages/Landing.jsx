@@ -28,9 +28,35 @@ import Footer from '../components/Footer';
 import arrow1 from '../assets/arrow1.png'
 import { useNavigate } from 'react-router-dom';
 
-
 const Landing = () => {
 
+    const navigate = useNavigate();
+
+    
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+        //   behavior: 'smooth', // Optional: Adds smooth scrolling animation
+        behavior: 'instant'
+        });
+      };
+
+
+      const scrollToId = (targetId) => {
+        const targetElement = document.getElementById(targetId);
+    
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth', // Optional: Adds smooth scrolling animation
+            block: 'start', // Scrolls to the top of the element
+          });
+        }
+      };
+
+
+
+      
     
 
 
@@ -65,47 +91,52 @@ const Landing = () => {
                 <div className="aright">
                     <div className="ahead">About KessiTech</div>
                     <div className="acon">Welcome to KessiTech! We are dedicated to helping businesses unlock their digital potential and achieve sustainable growth through innovative technology solutions. With a focus on delivering value, we offer a comprehensive range of services designed to address your unique business needs. Partner with us to navigate the digital landscape and drive your success.</div>
-                    <Button className='herobtn' variant="contained">Read More</Button>
-
+                    <Button onClick={() => scrollToId('offer')} className='herobtn' variant="contained">Read More</Button>
                 </div>
             </div>
 
             <div className="work" >
                 <div className="whead">How We Works</div>
                 <div className="wname">Our Process</div>
-                <div className="wcon" style={{ backgroundImage: `url(${arrow1})` }}>
+                <div className="wcon"
+                //  style={{ backgroundImage: `url(${arrow1})` }}
+                 >
                     <div className="wsec">
+
                         <img className='wsecimg' src={planning} alt="" />
+                        <div className="ssecname r3">planning</div>
                     </div>
                     <div className="wsec">
                         <img className='wsecimg' src={developing} alt="" />
+                        <div className="ssecname r3">Developing</div>
                     </div>
                     <div className="wsec">
                         <img className='wsecimg' src={launching} alt="" />
+                        <div className="ssecname r3">Launching</div>
                     </div>
                 </div>
             </div>
 
-            <div className="offer">
+            <div className="offer" id='offer'>
                 <div className="whead ">What We Offer</div>
                 <div className="wname ">Our Service</div>
                 <div className="otop" style={{ backgroundImage: `url(${yellow})` }}>
                     <img className='offerimg' src={itservice} alt="" />
-                    <div className="ocon">
+                    <div className="ocon oconit">
                         <div className="ahead">IT Services</div>
-                        <div className="acon">We rely on the latest and greatest in programming languages, specializing in HTML5,
+                        <div  className="acon">We rely on the latest and greatest in programming languages, specializing in HTML5,
                             CSS, Javascript, Liquid, PHP, Solidity, Asp.net, and Python. Some of our favorite frameworks include angular js, express js, bootstrap, jwt, .Net MVC, .Net Core, Django,
                             and WordPress.</div>
-                        <Button className='herobtn' variant="contained">learn More</Button>
+                        <Button className='herobtn' onClick={()=>{navigate("/itservice");scrollToTop()}} variant="contained">learn More</Button>
                     </div>
                 </div>
                 <div className="obottom" style={{ backgroundImage: `url(${red})` }}>
-                    <div className="ocon oconaie">
+                    <div className="ocon oconaie oconmar">
                         <div className="ahead">Marketing Services</div>
                         <div className="acon aconall">We rely on the latest and greatest in programming languages, specializing in HTML5,
                             CSS, Javascript, Liquid, PHP, Solidity, Asp.net, and Python. Some of our favorite frameworks include angular js, express js, bootstrap, jwt, .Net MVC, .Net Core, Django,
                             and WordPress.</div>
-                        <Button className='herobtn' variant="contained">learn More</Button>
+                        <Button className='herobtn' onClick={()=>{navigate("/marketing");scrollToTop()}} variant="contained">learn More</Button>
                     </div>
                     <img className='offerimg' src={Marketing} alt="" />
                 </div>
@@ -173,8 +204,8 @@ const Landing = () => {
 
 
             <div className="wwork">
-                <div className="whead ">Technologies We Work</div>
-                <div className="wname ">Our Expertise</div>
+                <div className="whead">Technologies We Work</div>
+                <div className="wname">Our Expertise</div>
                 <div className="workcon">
                     <div className="worksec">
                         <img src={angular} alt="" className="gp" />

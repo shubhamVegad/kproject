@@ -1,0 +1,225 @@
+@import '../mixins.scss';
+
+.aboutus {}
+
+.corevalue {
+    height: 950px;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include md {
+        height: 820px;
+    }
+
+    @include sm {
+        width: 95%;
+        height: 950px;
+    }
+}
+
+.corehead {
+    color: var(--darkgray);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.corecon {
+    height: 90%;
+    // width: 100%;
+    // margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include md {
+        width: 100%;
+        // height: 88%;
+    }
+    @include sm {
+        height: 94%;
+    }
+}
+
+.coreconsec {
+    // height: 40%;
+    height: 400px;
+    // width: 20%;
+    width: 330px;
+    // margin: auto;
+    // margin: 2%;
+    border: 1px solid var(--lightblue);
+    border-radius: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F4FDFD;
+    box-sizing: border-box;
+    padding: 1%;
+
+    @include lg {
+        height: 45%;
+        width: 30%;
+    }
+    @include sm {
+        height: 30%;
+        width: 45%;
+    }
+
+    // @include md{
+    //     height: 150px;
+    //     width: 150px;
+    // }
+}
+
+.coreimgbox {
+    height: 40%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--lightblue);
+    @include sm{
+        height: 40%;
+        width: 80%;
+    }
+}
+.coreimgboximg{
+    scale: 0.8;
+}
+
+.coreseccon {
+    line-height: 22px;
+    font-size: 1.1rem;
+    font-family: 'Raleway';
+    text-align: center;
+
+    @include sm {
+        line-height: 18px;
+        font-size: 0.9rem;
+    }
+}
+
+.apart{
+    width: 90%;
+    height: 440px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    @include md{
+        height: 440px;
+        width: 95%;
+    }
+    @include sm{
+        height: 500px;
+    }
+}
+.apartcon{
+    height: 90%;
+    width: 85%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: center center;
+    @include md{
+        background-size: 100% 70%;
+    }
+    @include sm{
+        display: none;
+    }
+}
+
+.apartsec{
+    height: 50%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    @include sm{
+        width: 45%;
+        margin: auto;
+        align-items: center;
+    }
+    
+}
+.apartseccon{
+    line-height: 22px;
+    font-size: 1.1rem;
+    font-family: 'Raleway';
+    // text-align: left;
+
+    @include md {
+        line-height: 16px;
+        font-size: 0.8rem;
+    }
+    @include sm{
+        text-align: center;
+    }
+}
+.atopleft{
+    align-items: flex-end;
+    justify-content: center;
+    div{
+        text-align: right;
+    }
+}
+.abottomleft{
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 10%;
+    div{
+        text-align: left;
+    }
+}
+.abottomright{
+    align-items: flex-end;
+    justify-content: center;
+    padding-left: 10%;
+    div{
+        text-align: right;
+    }
+}
+.atopright{
+    align-items: flex-start;
+    justify-content: center;
+    div{
+        text-align: left;
+    }
+}
+
+.apartmobile{
+    display: none;
+    @include sm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 87%;
+        width: 100%;
+    }
+}
+.ambox{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.amimmg{
+    height: 35%;
+    width: 90%;
+}

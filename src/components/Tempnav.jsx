@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './tempnav.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
-import logo from '../assets/Logo.png'
+import logo from '../assets/Logo.svg'
 import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -23,6 +23,16 @@ const Tempnav = () => {
     };
 
 
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+        //   behavior: 'smooth', // Optional: Adds smooth scrolling animation
+        behavior: 'instant'
+        });
+      };
+
+
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
     const handleOnClick = () => {
@@ -31,11 +41,11 @@ const Tempnav = () => {
 
     return (
         <nav className='mainnav'>
-            <div className='logo bo'>
-                <img onClick={() => navigate("/")} src={logo} alt="" />
+            <div className='logo'>
+                <img onClick={()=>{navigate("/");scrollToTop()}} src={logo} alt="" />
             </div>
-            <ul className="desktop-menu bo">
-                <li className="menuItem bo" onClick={() => navigate("/")}>Home</li>
+            <ul className="desktop-menu">
+                <li className="menuItem" onClick={()=>{navigate("/");scrollToTop()}}>Home</li>
                 <li className="menuItem">
                     <Button
                         id="basic-button"
@@ -56,13 +66,13 @@ const Tempnav = () => {
                             'aria-labelledby': 'basic-button',
                         }}
                     >
-                        <MenuItem onClick={()=>{handleClose();navigate("/itservice")}} >IT Service</MenuItem>
-                        <MenuItem onClick={()=>{handleClose();navigate("/marketing")}}>Marketing Service</MenuItem>
+                        <MenuItem onClick={()=>{scrollToTop();handleClose();navigate("/itservice")}} >IT Service</MenuItem>
+                        <MenuItem onClick={()=>{scrollToTop();handleClose();navigate("/marketing")}}>Marketing Service</MenuItem>
                     </Menu>
                 </li>
-                <li className="menuItem" onClick={() => navigate("/aboutus")}>About Us</li>
+                <li className="menuItem" onClick={()=>{navigate("/aboutus");scrollToTop()}}>About Us</li>
                 <li className="menuItem" id='cbtn'>
-                    <Button id='navbtn' variant="contained" onClick={() => navigate("/contactus")} >Contact Us</Button>
+                    <Button id='navbtn' variant="contained" onClick={()=>{navigate("/contactus");scrollToTop()}} >Contact Us</Button>
                 </li>
             </ul>
 
@@ -70,7 +80,7 @@ const Tempnav = () => {
             {isMobileMenuOpen ? <FontAwesomeIcon className='mobile-menu-button' icon={faXmark} onClick={handleOnClick} /> : <FontAwesomeIcon className='mobile-menu-button' icon={faBars} onClick={handleOnClick} />}
             {
                 isMobileMenuOpen ? <ul className='mobile-menu'>
-                    <li className="menuItem" onClick={()=>{handleOnClick();navigate("/")}}>Home</li>
+                    <li className="menuItem" onClick={()=>{handleOnClick();navigate("/");scrollToTop()}}>Home</li>
                     {/* <li className="menuItem" onClick={() => navigate("/")}>Home</li> */}
                     <li className="menuItem">
                         <Button
@@ -94,14 +104,14 @@ const Tempnav = () => {
                         >
                             <MenuItem 
                             // onClick={handleClose} 
-                            onClick={()=>{handleClose();handleOnClick();navigate("/itservice")}}
+                            onClick={()=>{handleClose();handleOnClick();navigate("/itservice");scrollToTop()}}
                             >IT Service</MenuItem>
-                            <MenuItem onClick={()=>{handleClose();handleOnClick();navigate("/marketing")}}>Marketing Service</MenuItem>
+                            <MenuItem onClick={()=>{handleClose();handleOnClick();navigate("/marketing");scrollToTop()}}>Marketing Service</MenuItem>
                         </Menu>
                     </li>
-                    <li className="menuItem" onClick={()=>{handleOnClick();navigate("/aboutus")}}>About Us</li>
+                    <li className="menuItem" onClick={()=>{handleOnClick();navigate("/aboutus");scrollToTop()}}>About Us</li>
                     <li className="menuItem" id="cbtn">
-                        <Button id='navbtn-mobile' variant="contained" onClick={()=>{handleOnClick();navigate("/contactus")}} >Contact Us</Button>
+                        <Button id='navbtn-mobile' variant="contained" onClick={()=>{handleOnClick();navigate("/contactus");scrollToTop()}} >Contact Us</Button>
                     </li>
                 </ul> : ''
             }

@@ -8,19 +8,28 @@ const HeroBanner = () => {
 
   // const navigate = useNavigate();
 
+  const handleWhatsAppClick = () => {
+    // Replace '1234567890' with the phone number you want to chat with
+    const phoneNumber = '8866140959';
+    const whatsappURL = `https://wa.me/${phoneNumber}`;
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappURL, '_blank');
+  };
+
   return (
     <div className='herobanner '>
-      <div className="left ">
-        <div className="container ">
-        <div className="fl">We are ready to serve</div> 
-        <div className="sl">Web Development</div>
+      <div className="hbleft  ">
+        <div className="hbcontainer  ">
+        <div className="fl ">We are ready to serve</div> 
+        <div className="sl ">Web Development</div>
         <div className="tl">to grow your business</div>
-        <Button className='herobtn' variant="contained"
+        <Button onClick={handleWhatsAppClick} className='herobtn' variant="contained"
         //  onClick={() => navigate("/contactus")} 
          >Let's Get Connect</Button>
         </div>
       </div>
-      <div className="right">
+      <div className="hbright ">
         <img className='heroimg ' src={heroimg} alt="" />
       </div>
     </div>

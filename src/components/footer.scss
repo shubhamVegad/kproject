@@ -12,6 +12,7 @@
     }
     @include sm{
         height: 583px;
+        margin-top: 10px;
     }
 
 }
@@ -34,6 +35,7 @@
     }
     @include sm{
         width: 90%;
+        justify-content: center;
     }
 }
 .bluetext{
@@ -48,6 +50,10 @@
         height: 100%;
         width: 70%;
         // padding: 2%;
+        @include sm{
+            width: 63%;
+            padding: 0;
+        }
     }
 }
 .headt{
@@ -82,6 +88,14 @@
     }
 
 }
+.normaltlink{
+    cursor: pointer;
+    &:hover{
+        color: #a7a5a5;
+        scale: 1.02;
+        transition: 0.2s;
+    }
+}
 .bluebtn{
     height: 80%;
     width: 30%;
@@ -99,8 +113,8 @@
     margin: auto !important;
     border-radius: 5rem !important;
     @include sm{
-        font-size: 11px !important;
-        line-height: 12px !important;
+        font-size: 14px !important;
+        line-height: 23px !important;
 
     }
 }
@@ -190,12 +204,21 @@
         width: 40%;
     }
 }
+a {
+    color: inherit; /* Use the color inherited from the parent element */
+    text-decoration: none; /* Remove the underline on the anchor tags */
+  }
 .fsmicon{
     height: 20px;
     width: 20px;
     cursor: pointer;
     margin: 2%;
     margin-top: 20px;
+    &:hover{
+        color: #a7a5a5;
+        scale: 1.1;
+        transition: 0.2s;
+    }
 }
 .fql{
     width: 20%;
@@ -224,3 +247,4 @@
         height: 10%;
     }
 }
+

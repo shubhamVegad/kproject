@@ -1,0 +1,212 @@
+@import "../mixins.scss";
+
+.ContactInfo {
+    width: 90%;
+    margin-top: 10px;
+    height: 667px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    @include md {
+        height: 850px;
+        flex-direction: column;
+        gap: 2%;
+    }
+    @include sm {
+        height: 900px;
+    }
+}
+
+.leftInfo {
+    font-family: 'Raleway';
+    color: #ffffff;
+    width: 35%;
+    height: 96%;
+    background-image: url('../assets/CBackGround.png');
+    background-repeat: no-repeat;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8%;
+    padding: 5% 2%;
+    @include md {
+        width: 70%;
+        height: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 12%;
+        padding: 10% 3%;
+    }
+    @include sm {
+        width: 90%;
+        height: 40%;
+        justify-content: space-evenly;
+    }
+}
+
+.Cbox {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 90%;
+    justify-content: flex-start;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    @include md {
+        width: 100%;
+    }
+}
+
+#Cinfo {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
+.react-icons {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.rightInfo {
+    padding: 0% 2.5%;
+    width: 52%;
+    height: 96%;
+    @include md {
+        width: 75%;
+        height: 50%;
+    }
+    @include sm {
+        width: 90%;
+        height: 60%;
+    }
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+
+}
+
+.cbox2 {
+    width: 90%;
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20%;
+    @include md {
+        height: 15%;
+        gap: 15%;
+    }
+    @include sm {
+        width: 95%;
+    }
+}
+
+.cbox2 div {
+    display: inline-block;
+    width: 100%;
+    height: 35%;
+    @include md {
+        font-size: 95%;
+    }
+    @include sm {
+        font-size: 100%;
+    }
+}
+
+input {
+    height: 60%;
+    font-family: 'Raleway';
+    width: 100%;
+    color: #525252;
+    font-size: 105%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #E5E2E2;
+    background: #FFF;
+    padding: 11.352px 11.762px;
+    @include md {
+        height: 50%;
+        font-size: 95%;
+        padding: 9.352px 9.762px;
+    }
+    @include sm {
+        font-size: 115%;
+        padding: 6.352px 5.762px;
+    }
+
+}
+
+.CMsg {
+    height: 30%;
+    gap: 7%;
+}
+
+#message {
+    height: 250%;
+    color: #525252;
+    font-size: 105%;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    line-height: 140%;
+    border-radius: 5px;
+    border: 1px solid #E5E2E2;
+    background: #FFF;
+    padding: 11.352px 11.762px;
+    @include md {
+        font-size: 95%;
+        padding: 9.352px 9.762px;
+        line-height: 120%;
+    }
+    @include sm {
+        font-size: 115%;
+        padding: 6.352px 5.762px;
+    }
+}
+
+.CSubmitBtn {
+    height: 7%;
+    width: 33%;
+    margin: 0% 0%;
+    border-radius: 25px;
+    @include md {
+        width: 50%;
+        height: 10%;
+    }
+    @include sm {
+        height: 8%;
+        width: 60%;
+    }
+}
+.csbtn{
+    color: white !important;
+    background-color: var(--lightblue) !important;
+    border-radius: 25px;
+    // text-transform: revert;
+}
+
+.thanks{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    // background-color: var(--lightblue);
+    color: var(--darkblue);
+    font-family: Raleway;
+    @include sm{
+        font-size: 1.5rem;
+
+    }
+
+}

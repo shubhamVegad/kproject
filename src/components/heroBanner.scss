@@ -1,5 +1,7 @@
 @import "../mixins.scss";
-
+.bo{
+    border: 1px solid red;
+}
 .herobanner {
     height: 727px;
     width: 100%;
@@ -15,10 +17,13 @@
 
 
     }
+    @include sm{
+        height: 620px;
+    }
 
 }
 
-.left {
+.hbleft {
     height: 100%;
     width: 55%;
     display: flex;
@@ -32,11 +37,12 @@
         width: 90%;
     }
     @include sm {
+        margin-top: 0;
         width: 100%;
     }
 }
 
-.container {
+.hbcontainer {
     font-family: 'Raleway', sans-serif;
     height: 60%;
     width: 90%;
@@ -51,7 +57,7 @@
     @include md{
         padding: 2%;
         margin-left: 0;
-        height: 90%;
+        height: 100%;
         width: 100%;
     }
 
@@ -90,6 +96,9 @@
     color: var(--darkgray);
     font-size: 33px;
     margin: 2%;
+    @include sm{
+        font-size: 1.5rem;
+    }
 }
 
 .herobtn {
@@ -99,7 +108,7 @@
     border-radius: 5rem !important;
 }
 
-.right {
+.hbright {
     display: flex;
     align-items: center;
     justify-content: center;

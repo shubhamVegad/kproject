@@ -51,10 +51,12 @@
     color: var(--darkgray);
     font-weight: 800;
     text-align: center;
-    @include md{
+
+    @include md {
         font-size: 1rem;
     }
-    @include sm{
+
+    @include sm {
         font-size: 0.9rem;
     }
 
@@ -79,7 +81,8 @@
         width: 95%;
         flex-direction: column;
     }
-    @include sm{
+
+    @include sm {
         height: 460px;
     }
 
@@ -94,6 +97,7 @@
         width: 100%;
         text-align: center;
     }
+
     @include sm {
         height: 35%;
     }
@@ -122,6 +126,7 @@
         height: 60%;
         width: 100%;
     }
+
     @include sm {
         align-items: center;
         padding: 2%;
@@ -176,6 +181,7 @@
     font-family: Raleway;
     font-size: 35px;
     font-weight: 700;
+
     @include md {
         font-size: 1.8rem;
     }
@@ -191,6 +197,7 @@
     // flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+
     @include md {
         width: 100%;
         height: 60%;
@@ -216,12 +223,13 @@
     justify-content: space-evenly;
     background-color: #F4FDFD;
     box-sizing: border-box;
-    
-    @include md{
+
+    @include md {
         height: 130px;
         width: 130px;
     }
-    @include sm{
+
+    @include sm {
         height: 100px;
         width: 100px;
     }
@@ -232,7 +240,8 @@
 .wsecimg {
     height: 60%;
     width: 60%;
-    @include md{
+
+    @include md {
         height: 50%;
         width: 50%;
 
@@ -254,7 +263,7 @@
         width: 95%;
         height: 940px;
     }
-    
+
 
 }
 
@@ -268,7 +277,7 @@
     background-repeat: no-repeat;
     background-size: 49% 79%;
     background-position: 0px;
-    
+
     @include md {
         align-items: flex-start;
         flex-direction: column;
@@ -288,7 +297,7 @@
     background-repeat: no-repeat;
     background-size: 49% 79%;
     background-position: bottom right;
-    
+
     @include md {
         align-items: flex-end;
         background-size: 100% 100%;
@@ -313,9 +322,10 @@
     }
 }
 
-.oconaie{
+.oconaie {
     align-items: flex-start;
-    @include md{
+
+    @include md {
         align-items: flex-end;
 
     }
@@ -323,15 +333,16 @@
 
 .offerimg {
     height: 80%;
-    width: 35%;
-    
+    width: 30%;
+
     @include md {
         height: 40%;
         width: 58%;
         margin-inline: auto;
     }
 }
-.aconall{
+
+.aconall {
     text-align: left;
 }
 
@@ -347,10 +358,14 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: #f1f1f1;
+    @include lg{
+        height: 470px;
+    }
     @include md {
         width: 95%;
         height: 630px;
     }
+
     @include sm {
         width: 95%;
         height: 740px;
@@ -366,6 +381,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+
     @include md {
         width: 100%;
         height: 88%;
@@ -387,8 +403,19 @@
     justify-content: center;
     background-color: #F4FDFD;
     box-sizing: border-box;
-    
-    @include md{
+
+    &:hover {
+        scale: 0.98;
+        background-color: #e1e5e5;
+        transition: 400ms;
+        cursor: pointer;
+    }
+
+    @include lg{
+        height: 150px;
+        width: 24%;
+    }
+    @include md {
         height: 150px;
         width: 150px;
     }
@@ -422,7 +449,8 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    @include md{
+
+    @include md {
         height: 220px;
         width: 95%;
     }
@@ -435,7 +463,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    @include md{
+
+    @include md {
         height: 52%;
         width: 95%;
     }
@@ -448,7 +477,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    @include md{
+
+    @include md {
         width: 20%;
         height: 85%;
         justify-content: space-between;

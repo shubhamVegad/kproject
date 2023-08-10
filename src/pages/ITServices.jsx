@@ -1,14 +1,14 @@
 import React from 'react'
 import SubHeroBanner from '../Components/SubHeroBanner'
-import ITSerImg from '../assets/ITServices/ITServices.png'
+import ITSerImg from '../assets/itservice.svg'
 import OddPage from '../Components/OddPage'
 import Even from '../components/Even'
-import CAP from '../assets/ITServices/CAP.png'
-import Cloud from '../assets/ITServices/Cloud.png'
-import CRMERP from '../assets/ITServices/CRMERP.png'
-import ProDev from '../assets/ITServices/ProDev.png'
-import PSD from '../assets/ITServices/PSD.png'
-import UiUx from '../assets/ITServices/UiUx.png'
+import CAP from '../assets/ITServices/CAP.svg'
+import Cloud from '../assets/ITServices/Cloud.svg'
+import CRMERP from '../assets/ITServices/CRMERP.svg'
+import ProDev from '../assets/ITServices/ProDev.svg'
+import PSD from '../assets/ITServices/PSD.svg'
+import UiUx from '../assets/ITServices/UiUx.svg'
 
 
 function ITServices() {

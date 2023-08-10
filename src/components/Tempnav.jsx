@@ -8,6 +8,11 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import da from '../assets/down-arrow.svg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init()
+
 
 
 const Tempnav = () => {
@@ -40,7 +45,9 @@ const Tempnav = () => {
     }
 
     return (
-        <nav className='mainnav'>
+        <nav className='mainnav'
+        //  data-aos="zoom-in" data-aos-once="true" data-aos-duration="700"
+         >
             <div className='logo'>
                 <img onClick={()=>{navigate("/");scrollToTop()}} src={logo} alt="" />
             </div>

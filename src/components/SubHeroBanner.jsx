@@ -1,9 +1,13 @@
 import React from 'react'
 import './Subherobanner.scss'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init()
 
 const HeroBanner = (props) => {
   return (
-    <div className='herobanner'>
+    <div className='herobanner' data-aos="fade-down" data-aos-delay="200">
       <div className="left">
         {/* <div className="layout bo"> */}
             <div className="content">

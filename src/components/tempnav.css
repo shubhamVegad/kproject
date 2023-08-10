@@ -3,7 +3,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    height: 84px;
+    height: 74px;
     position: sticky;
     top: 0px;
     z-index: 10;
@@ -14,7 +14,7 @@ nav>.logo {
     cursor: pointer;
     margin-left: 5%;
     /* scale: 1.7; */
-    margin-top: 2%;
+    /* margin-top: 2%; */
 }
 
 nav>.desktop-menu {

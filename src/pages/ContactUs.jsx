@@ -1,6 +1,6 @@
 import React from 'react'
 import SubHeroBanner from '../Components/SubHeroBanner'
-import ContactImg from '../assets/ContactUs.png'
+import ContactImg from '../assets/ContactUs.svg'
 import ContInfo from '../components/ContInfo'
 
 

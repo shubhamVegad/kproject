@@ -9,6 +9,10 @@ import ContactUs from './pages/ContactUs'
 import ITServices from './pages/ITServices'
 import Marketing from './pages/Marketing';
 import About from './pages/About';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init()
 
 
 

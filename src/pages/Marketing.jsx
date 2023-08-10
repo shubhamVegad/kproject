@@ -1,15 +1,15 @@
 import React from 'react'
 import SubHeroBanner from '../Components/SubHeroBanner'
-import MarketServices from '../assets/MarketingServices/MarketingServices.png'
+import MarketServices from '../assets/Marketing.svg'
 import OddPage from '../Components/OddPage'
 import Even from '../components/Even'
-import Social from '../assets/MarketingServices/SocialManage.png'
-import SEO from '../assets/MarketingServices/SEO.png'
-import ContentMarketing from '../assets/MarketingServices/ContentMarketing.png'
-import PPC from '../assets/MarketingServices/PPCAds.png'
-import EMarketing from '../assets/MarketingServices/EmailMarketing.png'
-import BrandDesign from '../assets/MarketingServices/DesignProcess.png'
-import AIServices from '../assets/MarketingServices/AIServices.png'
+import Social from '../assets/MarketingServices/SocialManage.svg'
+import SEO from '../assets/MarketingServices/SEO.svg'
+import ContentMarketing from '../assets/MarketingServices/ContentMarketing.svg'
+import PPC from '../assets/MarketingServices/PPCAds.svg'
+import EMarketing from '../assets/MarketingServices/EmailMarketing.svg'
+import BrandDesign from '../assets/MarketingServices/DesignProcess.svg'
+import AIServices from '../assets/MarketingServices/AIServices.svg'
 
 
 function Marketing() {

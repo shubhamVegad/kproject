@@ -1,13 +1,17 @@
 import React from 'react'
 import './footer.scss'
 import { Button } from '@mui/material'
-import footlogo from '../assets/footlogo.png'
+import footlogo from '../assets/footlogo.svg'
 import { SlSocialInstagram, SlSocialDribbble, SlSocialTwitter, SlSocialYoutube } from 'react-icons/sl'
 import {SiLinkedin} from 'react-icons/si'
 import { IconContext } from 'react-icons'
 import { BiSolidPhoneCall, BiLogoGmail } from 'react-icons/bi'
 import { HiLocationMarker } from 'react-icons/hi'
 import { useNavigate } from 'react-router-dom'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init()
 
 const Footer = () => {
 
@@ -32,7 +36,7 @@ const Footer = () => {
 
   return (
     <div className='footer'>
-      <div className="blue">
+      <div className="blue" data-aos="fade-down" data-aos-delay="200">
         <div className="bluetext">
           <div className="headt">
             We are ready to lead you into the future of digital world.

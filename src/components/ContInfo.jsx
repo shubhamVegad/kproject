@@ -6,6 +6,10 @@ import { IconContext } from "react-icons";
 import { Button } from '@mui/material';
 import './ContInfo.scss'
 import { useForm, ValidationError } from '@formspree/react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init()
 
 
 function ContInfo() {
@@ -28,7 +32,7 @@ function ContInfo() {
   return (
     <>
       <div className="ContactInfo">
-        <div className="leftInfo">
+        <div className="leftInfo" data-aos="zoom-in" data-aos-duration="600">
           <IconContext.Provider value={{ className: "react-icons" }}>
             <div className="Cbox " id='Cinfo'>
               Contact Information
@@ -47,7 +51,7 @@ function ContInfo() {
             </div>
           </IconContext.Provider>
         </div>
-        <div className="rightInfo">
+        <div className="rightInfo" data-aos="fade-right" data-aos-duration="600">
 
 
           <form onSubmit={handleSubmit}>

@@ -107,7 +107,7 @@ const About = () => {
                     </div>
                     <div className="apartsec ">
                         <div className="r3">Comprehensive Service Portfolio</div>
-                        <div className="apartseccon">IT consulting, s/w development, cloud solutions, cybersecurity, and more, all under one roof.</div>
+                        <div className="apartseccon">IT consulting, s/w development, cloud solutions all under one roof.</div>
                     </div>
                     <div className="apartsec ">
                         <div className="r3">Dedicated Support</div>

@@ -19,6 +19,7 @@ import { FaBeer } from "react-icons/fa"
 import { BiShoppingBag, BiSolidBusiness, BiSolidBank, BiBuildings } from 'react-icons/bi'
 import { MdOutlineLocalHospital, MdShoppingCart } from 'react-icons/md'
 import { PiGameController } from 'react-icons/pi'
+import { IoMdSchool } from 'react-icons/io'
 import react from '../assets/react.svg'
 import mongo from '../assets/mongo.svg'
 import flutter from '../assets/flutter.svg'
@@ -133,7 +134,7 @@ const Landing = () => {
             <div className="offer" id='offer'>
                 <div className="whead ">What We Offer</div>
                 <div className="wname ">Our Service</div>
-                <div className="otop"  style={{ backgroundImage: `url(${yellow})` }}>
+                <div className="otop" style={{ backgroundImage: `url(${yellow})` }}>
                     <img className='offerimg' data-aos="fade-up" src={itservice} alt="" />
                     <div className="ocon oconit" data-aos="fade-up" data-aos-delay="300">
                         <div className="ahead">IT Services</div>
@@ -163,7 +164,8 @@ const Landing = () => {
                     <div className="scon " data-aos="fade-up" data-aos-once="true">
                         <div className="sconsec" data-aos-offset="120" data-aos="zoom-in" >
                             <div className="ssecimgbox" data-aos-once="true" data-aos="flip-left" data-aos-delay="300">
-                                <img className='global-class-name' src={edu} alt="" />
+                                {/* <img className='global-class-name' src={edu} alt="" /> */}
+                                    <IoMdSchool />
                             </div>
                             <div className="ssecname r3">Education</div>
                         </div>

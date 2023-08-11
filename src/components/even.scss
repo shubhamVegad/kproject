@@ -3,14 +3,24 @@
 .even{
     margin-top: 10px;
     height: 450px;
-    width: 90%;
+    width: 100%;
+    margin-inline: auto;
+    @include sm{
+        height: 550px;
+        // flex-direction: column-reverse;
+        // width: 95%;
+    }
+}
+.efake{
     margin-inline: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    width: 90%;
+    height: 100%;
     @include sm{
-        height: 550px;
+        // height: 550px;
         flex-direction: column-reverse;
         width: 95%;
     }

@@ -6,9 +6,9 @@ import tw from '../assets/teamwork 1.png'
 import pc from '../assets/parental-control.png'
 import oj from '../assets/online-journal.png'
 import frame from '../assets/Aboutus.svg'
-import planning from '../assets/planning.png'
-import developing from '../assets/developing.png'
-import launching from '../assets/launching.png'
+import planning from '../assets/planning.svg'
+import developing from '../assets/developing.svg'
+import launching from '../assets/launching.svg'
 import itservice from '../assets/itservice.svg'
 import Marketing from '../assets/Marketing.svg'
 import yellow from '../assets/yellow.png'
@@ -30,6 +30,7 @@ import arrow1 from '../assets/arrow1.png'
 import { useNavigate } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Carousel from '../components/Carousel';
 
 
 AOS.init({
@@ -98,7 +99,7 @@ const Landing = () => {
 
             </div>
 
-            <div className="about">
+            <div className="about effect5">
                 <div className="aleft" data-aos="fade-up">
                     <img className='aleftimg' src={frame} alt="" />
                 </div>
@@ -158,7 +159,7 @@ const Landing = () => {
 
 
             <IconContext.Provider value={{ className: "global-class-name" }}>
-                <div className="serve">
+                <div className="serve effect5">
                     <div className="whead ">Industries We Serve</div>
                     <div className="wname ">Best ever services</div>
                     <div className="scon " data-aos="fade-up" data-aos-once="true">
@@ -222,7 +223,8 @@ const Landing = () => {
                 <div className="whead">Technologies We Work</div>
                 <div className="wname">Our Expertise</div>
                 <div className="workcon" data-aos="fade-up">
-                    <div className="worksec">
+                    <Carousel></Carousel>
+                    {/* <div className="worksec">
                         <img data-aos="flip-left" data-aos-delay="300" data-aos-duration="700" src={angular} alt="" className="gp" />
                         <div className="r3"> Angular</div>
                     </div>
@@ -241,7 +243,7 @@ const Landing = () => {
                     <div className="worksec">
                         <img data-aos="flip-left" data-aos-delay="300" data-aos-duration="700" src={mongo} alt="" className="gp" />
                         <div className="r3">Mongo </div>
-                    </div>
+                    </div> */}
 
                 </div>
 

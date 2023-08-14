@@ -1,0 +1,61 @@
+@import '../mixins.scss';
+
+.marq {
+    display: flex;
+    width: 1700px;
+    height: 175px;
+    overflow: hidden;
+    user-select: none;
+
+
+    mask-image: linear-gradient(to right,
+            hsl(0 0% 0% / 0),
+            hsl(0 0% 0% / 1) 10%,
+            hsl(0 0% 0% / 1) 90%,
+            hsl(0 0% 0% / 0));
+
+
+    @include md {
+
+        height: 145px !important;
+        width: 2250px !important;
+    }
+}
+
+.cr3 {
+    font-size: 20px;
+    color: var(--darkgray);
+    font-weight: 800;
+    text-align: center;
+
+    @include md {
+        font-size: 1rem;
+    }
+}
+
+.cgp {
+    scale: 1;
+
+}
+@keyframes scrollX {
+    from {
+        left: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+  }
+
+.marqgrp {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 100%;
+    animation: scrollX 30s linear infinite;
+
+    @include md{
+        width: 65% !important;
+    }
+}

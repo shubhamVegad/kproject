@@ -11,6 +11,7 @@ import Marketing from './pages/Marketing';
 import About from './pages/About';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Carousel from './components/Carousel';
 
 AOS.init()
 
@@ -20,7 +21,8 @@ function App() {
   
 
   return (
-    
+
+    // <Carousel />
     <BrowserRouter>
     <Tempnav></Tempnav>
     <Routes>

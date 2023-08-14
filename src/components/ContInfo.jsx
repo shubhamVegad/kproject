@@ -31,7 +31,7 @@ function ContInfo() {
 
   return (
     <>
-      <div className="ContactInfo">
+      <div className="ContactInfo ">
         <div className="leftInfo" data-aos="zoom-in" data-aos-duration="600">
           <IconContext.Provider value={{ className: "react-icons" }}>
             <div className="Cbox " id='Cinfo'>

@@ -74,7 +74,7 @@
     display: flex;
     flex-direction: row;
     background-color: var(--lightbg);
-    
+
     @include md {
         margin-inline: auto;
         padding-inline: 0;
@@ -358,9 +358,11 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: #f1f1f1;
-    @include lg{
+
+    @include lg {
         height: 470px;
     }
+
     @include md {
         width: 95%;
         height: 630px;
@@ -416,21 +418,25 @@
         transition: 400ms;
         cursor: pointer;
     }
-    &:hover .ssecimgbox{
+
+    &:hover .ssecimgbox {
         background-color: white;
     }
-    &:hover .ssecname{
+
+    &:hover .ssecname {
         color: white;
     }
-    &:hover .global-class-name{
+
+    &:hover .global-class-name {
         color: var(--lightblue);
         // color: red;
     }
 
-    @include lg{
+    @include lg {
         height: 150px;
         width: 24%;
     }
+
     @include md {
         height: 150px;
         width: 150px;
@@ -470,11 +476,12 @@
 
 .workcon {
     height: 60%;
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    overflow: hidden;
 
     @include md {
         height: 52%;
@@ -490,9 +497,52 @@
     align-items: center;
     justify-content: space-evenly;
 
-    @include md {
-        width: 20%;
-        height: 85%;
-        justify-content: space-between;
-    }
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 0.5rem;
+    object-fit: contain;
+    padding: 5px 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    // @include md {
+    //     width: 20%;
+    //     height: 85%;
+    //     justify-content: space-between;
+    // }
+}
+
+.effect5
+{
+  position: relative;
+}
+.effect5:before, .effect5:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect5:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
 }

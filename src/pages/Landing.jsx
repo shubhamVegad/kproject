@@ -80,7 +80,7 @@ const Landing = () => {
 
             <HeroBanner></HeroBanner>
 
-            <div data-aos="fade-up" className="galary">
+            <div className="galary">
                 <div className="sec">
                     <img src={tw} alt="" className="gp" />
                     <div className="r2"> 25+</div>
@@ -111,7 +111,7 @@ const Landing = () => {
             </div>
 
             <div className="work" >
-                <div className="whead">How We Works</div>
+                <div className="whead">How We Work</div>
                 <div className="wname">Our Process</div>
                 <div className="wcon" data-aos="fade-up"
                 //  style={{ backgroundImage: `url(${arrow1})` }}
@@ -119,7 +119,7 @@ const Landing = () => {
                     <div className="wsec">
 
                         <img data-aos-delay="200" data-aos-duration="700" data-aos="flip-left" className='wsecimg' src={planning} alt="" />
-                        <div className="ssecname r3">planning</div>
+                        <div className="ssecname r3">Planning</div>
                     </div>
                     <div className="wsec">
                         <img data-aos-delay="200" data-aos-duration="700" data-aos="flip-left" className='wsecimg' src={developing} alt="" />

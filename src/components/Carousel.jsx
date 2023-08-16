@@ -54,7 +54,7 @@ function Carousel() {
         </div>,
         <div className="worksec">
             <img data-aos="flip-left" data-aos-duration="700" src={mongo} alt="" className="cgp" />
-            <div className="cr3">Mongo </div>
+            <div className="cr3">MongoDB</div>
         </div>,
         <div className="worksec">
             <img data-aos="flip-left" data-aos-duration="700" src={Vue} alt="" className="cgp" />

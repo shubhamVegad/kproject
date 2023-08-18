@@ -99,14 +99,14 @@ const Landing = () => {
 
             </div>
 
-            <div className="about effect5">
+            <div className="about">
                 <div className="aleft" data-aos="fade-up">
                     <img className='aleftimg' src={frame} alt="" />
                 </div>
                 <div className="aright" data-aos="fade-up" data-aos-delay="300">
                     <div className="ahead">About KessiTech</div>
                     <div className="acon">Welcome to KessiTech! We are dedicated to helping businesses unlock their digital potential and achieve sustainable growth through innovative technology solutions. With a focus on delivering value, we offer a comprehensive range of services designed to address your unique business needs. Partner with us to navigate the digital landscape and drive your success.</div>
-                    <Button onClick={() => scrollToId('offer')} className='herobtn' variant="contained">Read More</Button>
+                    <Button onClick={() => { navigate("/aboutus"); scrollToTop() }} className='herobtn' variant="contained">Read More</Button>
                 </div>
             </div>
 
@@ -159,7 +159,7 @@ const Landing = () => {
 
 
             <IconContext.Provider value={{ className: "global-class-name" }}>
-                <div className="serve effect5">
+                <div className="serve">
                     <div className="whead ">Industries We Serve</div>
                     <div className="wname ">Best ever services</div>
                     <div className="scon " data-aos="fade-up" data-aos-once="true">

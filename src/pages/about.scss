@@ -73,6 +73,12 @@
         height: 30%;
         width: 45%;
     }
+    @include xxl{
+        width: 26%;
+    }
+    @include xl{
+        width: 26%;
+    }
 
     // @include md{
     //     height: 150px;

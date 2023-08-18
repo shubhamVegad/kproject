@@ -268,7 +268,7 @@
 }
 
 .otop {
-    height: 45%;
+    height: 43%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -288,7 +288,7 @@
 }
 
 .obottom {
-    height: 45%;
+    height: 43%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -372,6 +372,9 @@
         width: 95%;
         height: 740px;
     }
+    @include xxl{
+        height: 800px;
+    }
 }
 
 .scon {
@@ -441,6 +444,9 @@
     @include md {
         height: 150px;
         width: 150px;
+    }
+    @include xxl{
+        height: 47%;
     }
     
 }

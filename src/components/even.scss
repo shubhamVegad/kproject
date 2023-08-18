@@ -1,5 +1,7 @@
 @import '../mixins.scss';
 
+
+
 .even{
     margin-top: 10px;
     height: 450px;
@@ -46,7 +48,7 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
     padding: 5%;
     padding-top: 8%;

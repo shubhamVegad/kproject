@@ -10,7 +10,7 @@ const Even = (props) => {
     return (
         <div className='even '>
             <div className="efake">
-            <div className="evenleft " data-aos="fade-up" data-aos-delay="300">
+            <div className="evenleft" data-aos="fade-up" data-aos-delay="300">
                 <div className="ahead">{props.heading}</div>
                 <div className="acon">{props.content}</div>
             </div>

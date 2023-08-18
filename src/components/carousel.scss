@@ -20,6 +20,9 @@
         height: 145px !important;
         width: 2250px !important;
     }
+    @include xxl{
+        width: 1800px;
+    }
 }
 
 .cr3 {
